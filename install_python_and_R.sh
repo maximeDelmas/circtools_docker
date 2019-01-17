@@ -26,3 +26,13 @@ apt-get update
 apt-get install -y \
 python3.6 \
 python3-pip \
+
+apt-get install -y zlib1g-dev
+
+
+### installation ###
+echo "STAR installed Version : " $STAR_VERSION
+wget https://github.com/alexdobin/STAR/archive/$STAR_VERSION'.tar.gz'
+tar -xzf $STAR_VERSION'.tar.gz' 
+cd STAR-$STAR_VERSION/source
+make

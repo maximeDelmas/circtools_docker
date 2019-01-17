@@ -5,7 +5,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 ENV VERSION=develop
 ENV STAR_VERSION="2.6.0a"
 
-ENV PATH="${PATH}:/CircRNADetectionPipeline/tools/alignment/STAR-$STAR_VERSION/source/"
+ENV PATH="${PATH}:/circtools_docker/STAR-$STAR_VERSION/source/"
 
 RUN apt-get update && apt-get install -y \
 software-properties-common \
